@@ -10,19 +10,17 @@ public class Pemilihan2Percobaan1_18 {
         int tahun = input.nextInt();
         
         // Menentukan apakah tahun adalah kabisat atau bukan
-        if (tahun % 4 == 0) {
-            if (tahun % 100 != 0) {
-                System.out.println(tahun + " adalah Tahun Kabisat.");
+        if ((tahun % 4 == 0 && tahun % 100 != 0) || tahun % 400 == 0) {
+            System.out.println("Tahun Kabisat");
             } else {
-                System.out.println(tahun + " bukan Tahun Kabisat.");
-            }
-        } else {
-            System.out.println(tahun + " bukan Tahun Kabisat.");
-        }
+            System.out.println("Bukan Tahun Kabisat");
+            } 
+        
         
         // Menutup scanner
         input.close(); }
     }
+    
         
 
     
